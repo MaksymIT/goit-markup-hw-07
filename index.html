@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>WEBSTUDIO</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -30,6 +31,15 @@
                 <li class="item"><a class="link-address link" href="tel:+110001111111">+11(000)111-11-11</a></li>
             </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
        </div>
     </header>
     <!---Unique page content-->
@@ -317,14 +327,14 @@
     <footer class="footer">
         <div class="container container-logo">
            <div class="container-logo-footer">
-            <a class="logo link" href="">WEB<span class="footer-logo">STUDIO</span></a>
+            <a class="logo logo-footer link" href="">WEB<span class="footer-logo">STUDIO</span></a>
             <p class="text-footer">
                 Increase the flow of customers and<br>
                 sales for your business with digital<br>
                 marketing & growth solutions.
             </p>
            </div>
-                <div>
+                <div class="icon-box">
                     <h3 class="soc-media">Social media</h3>
                     <ul class="list-icon-footer">
                         <li class="icon-footer">
@@ -364,7 +374,7 @@
                 <div class="footer-order">
                     <h3 class="title-order-footer">Subscribe</h3>
                    <form class="order-footer-box">
-                    <label>
+                    <label class="label-footer">
                         <input class="text-order-footer" type="text" placeholder="E-mail" required>
                     </label>
                     <button class="btn-footer-order" type="submit">Subscribe
@@ -422,6 +432,30 @@
         </form>    
         </div>
     </div>
+    <!-- mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="list">
+            <li class="item item-contacts"><a class="link-contacts link" href="">Studio</a></li>
+            <li class="item item-contacts"><a class="link-contacts link" href="">Portfolio</a></li>
+            <li class="item item-contacts"><a class="link-contacts current link" href="">Contacts</a></li>
+        </ul>
+    
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./modal.js"></script>
 </body>
 </html>
