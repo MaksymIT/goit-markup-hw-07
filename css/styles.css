@@ -417,7 +417,6 @@ img {
         
     }
 }
-
 .text-specifics {
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -466,8 +465,10 @@ img {
     text-align: center;
     padding: 188px 0px;
     
+    /* mobile-retina */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/hero/hero.jpg);
+    rgba(46, 47, 66, 0.7)), url(../images/mob-img/Dark-bg_mob@1x.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -475,6 +476,48 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+/* phone */
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/mob-img/Dark-bg_mob@2x.jpg);
+}
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .section { 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/tablet-img/Dark-bg_tablet@1x.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/tablet-img/Dark-bg_tablet@2x.jpg);
+    }
+}
+}
+
+/* decktop */
+@media screen and (min-width: 1158px) {
+    .section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/desktop-img/people-office\ 1_desktop@1x.jpg);
+}
+    
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/desktop-img/people-office\ 1_desktop@2x.jpg);
+    }
+}
+}
+
 .caption-hero {
     font-weight: 700;
     font-size: 36px;
@@ -591,7 +634,6 @@ img {
     .item-studio-adapt {
         margin-bottom: 100px;
     }
-
 }
 
 @media screen and (min-width: 1158px) {
@@ -605,6 +647,11 @@ img {
     padding-bottom: 120px;
 
     display: none;
+}
+@media screen and (min-width: 1158px) {
+    .section-doing {
+    display: block;
+    }
 }
 .caption {
     font-weight: 700;
